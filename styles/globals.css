@@ -13,6 +13,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, input {
+	color: #dadada;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -28,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #333;
 }
 ol, ul {
 	list-style: none;
