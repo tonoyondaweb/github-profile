@@ -7,6 +7,12 @@
     row-gap: 15px;
 }
 
+.gitLogo {
+    font-size: 5rem;
+    color: #4078c0;
+    margin-bottom: 15px;
+}
+
 .input {
     border: 2px solid #dadada3c;
     outline: none;
