@@ -1,0 +1,28 @@
+.repoList {
+    display: grid;
+    gap: 10px;
+    margin: 0 10px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+    .repoList {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+}
+
+@media (min-width: 900px) {
+    .repoList {
+        max-width: 1000px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1700px) {
+    .repoList {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1900px;
+    }
+}

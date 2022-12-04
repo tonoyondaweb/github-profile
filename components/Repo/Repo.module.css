@@ -1,0 +1,46 @@
+.repo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background: #4f4f4f;
+    padding: 20px 15px;
+    border-radius: 7px;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.description {
+    line-height: 1.2rem;
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.topics span:last-of-type {
+    display: none;
+}
+
+.links {
+    margin-top: auto;
+    display: flex;
+    column-gap: 5px;
+    font-size: 1.3em;
+}
+
+.links a {
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.links a:hover {
+    color: #4078c0;
+}
+
+
+
