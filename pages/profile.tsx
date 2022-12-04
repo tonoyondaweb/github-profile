@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Header from "../components/Header/Header";
 import { UserDataProps, RepoProps } from "../types/types";
 import RepoList from "../components/RepoList/RepoList";
+import Head from "next/head";
 
 export default function Profile() {
 	const { user } = useContext(userContext) as UserContextInterface;
@@ -45,6 +46,9 @@ export default function Profile() {
 	if (repoData) console.log(repoData);
 	return (
 		<div className={styles.profile}>
+			<Head>
+				<title>@{user} profile</title>
+			</Head>
 			{/* <p>{userData.name}</p> */}
 			<Header {...(userData as UserDataProps)} />
 			{repoData && <RepoList repoData={repoData} />}

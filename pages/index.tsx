@@ -4,12 +4,16 @@ import { UserContextInterface } from "./_app";
 import { userContext } from "./_app";
 import { useRouter } from "next/router";
 import { FiGithub } from "react-icons/fi";
+import Head from "next/head";
 
 export default function Home() {
 	const input = useContext(userContext) as UserContextInterface;
 	const router = useRouter();
 	return (
 		<div className={styles.home}>
+			<Head>
+				<title>GitHub Profile</title>
+			</Head>
 			<FiGithub className={styles.gitLogo} />
 			<h1 className={styles.prompt}>Enter your username</h1>
 			<input
